@@ -1,4 +1,4 @@
-### SafePlate
+# SafePlate
 
 ## Inspiration
 Amazon, Voice Command, Health, Public Safety
@@ -8,9 +8,9 @@ We were inspired by the impact of big data on public health. We realized that th
 Our Alexa skill tells the user the health inspection score on any amazon device. Furthermore, the user can ask Alexa for the phone number of the restaurant if they are interested in giving them a ring!
 
 ## How we built it
-# Backend
+### Backend
 We developed a custom API that bridges the gap between our database in MongoDB and our frontend application that was hosted on Alexa. This API allowed us to make the most of our free tier subscriptions to the technologies that are at the core of our application by keeping the database private and decentralized, which makes our application scalable.
-# Frontend
+### Frontend
 We developed an Alexa skill that utilized our custom API to query information that the user asks Alexa. We used AWS Lambda to serve as the middleware that extracted speech information from the user, retrieved information from our API, and presented the retrieved information to the user.
 
 ## Challenges we ran into
