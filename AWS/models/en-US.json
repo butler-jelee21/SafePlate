@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "safe plate",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetScore",
+          "slots": [
+            {
+              "name": "Query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "tell me the health score of {Query}",
+            "tell me the score of {Query}",
+            "score of {Query}",
+            "health score of {Query}",
+            "Give me the health score of {Query}",
+            "Give me the score of {Query}",
+            "what is the score of {Query}",
+            "What is the health score of {Query}"
+          ]
+        },
+        {
+          "name": "AddReservation",
+          "slots": [
+            {
+              "name": "Time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "Make a reservation at {Time}",
+            "Add a reminder to make a reservation at {Time}"
+          ]
+        },
+        {
+          "name": "GetNumber",
+          "samples": [
+            "Get the phone number",
+            "What is the phone number",
+            "Get the number",
+            "What is the number",
+            "Tell me the number",
+            "Tell me the phone number"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "12"
+}

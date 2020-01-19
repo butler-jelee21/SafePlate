@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:020582366127:function:9cf5f492-5e42-422b-8c0d-3f928c8ab900:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::household:lists:write"
+      },
+      {
+        "name": "alexa::household:lists:read"
+      }
+    ],
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "SafePlate",
+          "summary": "Easily access health inspection data.",
+          "description": "Ask about the health inspection score of any restaurant in San Fransisco.",
+          "examplePhrases": [
+            "Alexa, open safe plate",
+            "Give me the health score of Philz Coffee",
+            "Tell me the phone number"
+          ],
+          "keywords": []
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    }
+  }
+}
