@@ -1,7 +1,6 @@
 # SafePlate
 
 ## Inspiration
-Amazon, Voice Command, Health, Public Safety
 We were inspired by the impact of big data on public health. We realized that there was a plethora of public health data that wasn't being fully utilized, so we wanted to create something that uses the large amount of available data to inform the public of public health issues that people normally don't think about.
 
 ## What it does
