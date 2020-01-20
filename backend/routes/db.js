@@ -1,7 +1,7 @@
 const express = require('express');
 const MongoClient =  require('mongodb').MongoClient;
 const app = express();
-const uri = "mongodb+srv://jeffrey856:cookies1234@safeplatedb-p4xjd.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://jeffrey856:{}@safeplatedb-p4xjd.mongodb.net/test?retryWrites=true&w=majority";
 const database_name = 'restaurants'
 
 var database, collection;
@@ -16,8 +16,9 @@ app.get('/db', (req, res, next) => {
     database = client.db(database_name);
     collection = database.collection('restaurant');
     console.log("Connected to `" + database_name + "`!");
-    collection.find().toArray((err, items) => {
+    collection.find().limit(4).toArray((err, items) => {
       console.log(items);
+      res.send({express: items})
     });
   });
 }); 

@@ -17,7 +17,7 @@ class Map extends Component{
             <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
                ref={(el) => this._googleMap = el}          
-               bootstrapURLKeys={{ key: "AIzaSyCtn9i2oi7bB7_rYWLaQ2z3yzCUvEocUmQ" }}          
+               bootstrapURLKeys={{ key: '' }}          
                defaultCenter={this.props.center}          
                defaultZoom={this.props.zoom}          
                heatmapLibrary={true}          
